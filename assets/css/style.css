@@ -1,0 +1,30 @@
+:root {
+    --color: #e866ec
+}
+
+header {
+
+
+}
+
+h1 {
+
+}
+
+main {
+    display: flex;
+}
+
+/* Box Classes */
+
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.low {
+    display: flex;
+    flex-flow: column wrap;
+}
