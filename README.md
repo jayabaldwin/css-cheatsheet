@@ -1,1 +1,1 @@
-# module-02-mini-project
+# CSS Code Snippet Cheatsheet
