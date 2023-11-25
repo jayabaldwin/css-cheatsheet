@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Snippet Cheatsheet</title>
+    <!-- add reset.css stylesheet -->
+    <link rel="stylesheet" href="#" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
 <body>
+
+<!-- header -->
     <header>
         <h1>CSS Snippet Cheatsheet</h1>
         <p>Ever have trouble remembering the exact syntax for your favorite CSS code? Give it a permanent home and add this to the page. Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
 
-    <main class="big-box">
-        <section class="row">
-            <div class="card-column">
+<!-- main section (boxes)-->
+<!-- first class defines the outer flexbox
+    . main-box {
+        display: flex; (automaticallly a row)
+        justify-content: center;
+    }-->
+    <main>
+        <section class="main-box">
+
+            <!-- the individual cards  -->
+            <div class="single-card">
                 <figure>
                     <h2>Flexbox Row</h2>
                     <p>Use these three properties to create a Flexbox row layout.</p>
-                    <pre><code>.row {
+                    <pre><code>
+.row {
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
@@ -27,9 +41,7 @@
                     </code></pre>
                 </figure>
             </div>
-        </section>
-
-        <section class="row">
+      
             <div class="card-column">
                 <figure>
                     <h2>Flexbox Column</h2>
@@ -41,9 +53,7 @@
                     </code></pre>
                 </figure>
             </div>
-        </section>
-
-        <section class="row">
+  
             <div class="card-column">
                 <figure>
                     <h2>CSS Grid Layout</h2>
@@ -57,9 +67,7 @@
                     </code></pre>
                 </figure>
             </div>
-        </section>
-
-        <section class="low">
+      
             <div class="card-column">
                 <figure>
                     <h2>Linear Gradients</h2>
@@ -72,9 +80,7 @@
                     </code></pre>
                 </figure>
             </div>
-        </section>
-
-        <section class="low">
+ 
             <div class="card-column">
                 <figure>
                     <h2>Box Transition Glow</h2>
@@ -93,9 +99,7 @@
                     </code></pre>
                 </figure>
             </div>
-        </section>
-
-        <section class="low">
+ 
             <div class="card-column">
                 <figure>
                     <h2>Overlay Card with Title</h2>
