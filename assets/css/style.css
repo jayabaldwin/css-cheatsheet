@@ -7,18 +7,70 @@
   }
 
 
-/* set content highlight color and background */
+html {
+    /* font-size naturally = 16px, 62.5% of 16=10px, therefore 1rem is now = 10px, instead of 16, for easier calculations
+    rem is font-size in relation to the root element, em to the parent element) */
+    font-size: 62.5%;
+  }
+
+
+/* highlight color */
 ::selection {
     background-color: var(--turquoise);
     color: var(--charcoal);
-  }
-
-header {}
+}
 
 
+body {
+    background-color: var(--charcoal);
+    color: var(--off-white);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    /* confused as to how we knew what font-size to pick */
+    font-size: 1.75rem;
+}
 
-/* Box Classes */
+header {
+    text-align: center;
+}
 
+header h1 {
+    font-size: 4.5rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--pink-fluro);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Monospace font stack is used to make code look like a code block */
+code {
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+    monospace;
+}
+
+
+/* box classes */
 .main-box {
     display: flex;
     flex-direction: row;
@@ -27,8 +79,27 @@ header {}
     flex-basis: 33.33333%;
 }
 
-.single-card {
+.card-column {
     display: column;
     align-items: flex-start;
     padding: 20px;
 }
+
+.card-single {
+
+}
+
+.card-header {
+
+}
+
+.card-body {
+
+}
+
+.card-code {
+
+}
+
+
+/* media queries */
